@@ -1,0 +1,391 @@
+:root {
+	/* Цвет кнопок, hover и focus элементов*/
+	--color-for-hovered: #2196f3;
+
+	/* Цвет текста кнопок и текста на затемненных элементах */
+	--color-for-btn-caption: #ffffff;
+
+	/* Цвет описания emai и tel в header, преимуществ и членов команды*/
+	--color-for-description: #757575;
+
+	/* Радиус скругления для изображений */
+	--radius-borders: 4px;
+
+	/* Ширина контейнеров с учетов  */
+	--width-of-container: 1200px;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+
+	color: #212121;
+}
+
+h2 {
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 50px;
+
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 42px;
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	text-align: center;
+}
+
+h3 {
+	margin: 0px;
+	padding: 0px;
+}
+
+ul {
+	list-style-type: none;
+
+	margin: 0px;
+	padding-inline-start: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.no-display {
+	display: none;
+}
+
+.container {
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 94px;
+	padding: 0px 15px;
+
+	width: var(--width-of-container);
+}
+
+/* 
++++++++++++++++++++++
+	Header
++++++++++++++++++++++
+*/
+/* .head {
+	margin-top: 24px;
+	margin-left: auto;
+	margin-right: auto;
+
+	width: var(--width-of-container);
+} */
+
+.logo {
+	font-family: 'Raleway', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 26px;
+	line-height: 1.19em;
+
+	letter-spacing: 0.03em;
+}
+
+.logo-text-web {
+	color: #2196f3;
+}
+
+.menu-nav,
+.mail-and-tel {
+	font-weight: 500;
+	font-size: 14px;
+	font-style: normal;
+	line-height: 1.14em;
+	letter-spacing: 0.02em;
+}
+
+.menu-nav > li {
+	display: inline-block;
+}
+
+.mail-and-tel a {
+	color: var(--color-for-description);
+}
+
+.mail-and-tel a:not(:last-child) {
+	margin-right: 30px;
+}
+
+.menu-nav a:hover,
+.menu-nav a:focus,
+.mail-and-tel a:hover,
+.mail-and-tel a:focus,
+.current {
+	color: var(--color-for-hovered);
+}
+
+/* 
++++++++++++++++++++++
+	Main
++++++++++++++++++++++
+*/
+/* 
+	+++Раздел Герой+++
+*/
+.hero {
+	padding: 0px;
+	margin-bottom: 94px;
+
+	background: no-repeat url(/images/order-background.jpg);
+
+	text-align: center;
+
+	width: 100%;
+}
+
+.hero > div {
+	height: 600px;
+
+	text-align: center;
+
+	background: rgba(47, 48, 58, 0.8);
+}
+
+.hero h1 {
+	margin: 0;
+	margin-bottom: 30px;
+	padding: 0;
+
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36em;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+
+	color: white;
+}
+
+.button {
+	display: inline-block;
+
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 1.87em;
+
+	border-radius: var(--radius-borders);
+	padding: 10px 32px;
+	min-width: 200px;
+
+	color: var(--color-for-btn-caption);
+
+	background-color: var(--color-for-hovered);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.button:hover,
+.button:focus {
+	color: var(--color-for-hovered);
+	background-color: var(--color-for-btn-caption);
+}
+
+/* 
+	+++ Наши особенности +++
+*/
+
+.skills-item {
+	display: inline-block;
+	width: 270px;
+}
+
+.features h3 {
+	margin: 0px;
+	margin-bottom: 10px;
+
+	font-size: 14px;
+	line-height: 1.14em;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+
+.rectangle-for-skills-img {
+	margin-bottom: 30px;
+
+	height: 120px;
+
+	background: #f5f4fa;
+	border-radius: var(--radius-borders);
+}
+
+.features p {
+	margin: 0px;
+
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.71em;
+	letter-spacing: 0.03em;
+
+	color: var(--color-for-description);
+}
+
+/* 
++++ Чем мы занимаемся +++
+*/
+
+.what-we-do-item {
+	display: inline-block;
+
+	width: 370px;
+	height: 294px;
+
+	border-radius: var(--radius-borders);
+}
+
+.desctop-app {
+	height: inherit;
+	background: no-repeat url(/images/desctop-app.jpg);
+	/* outline: solid 2px red; */
+}
+
+.mobile-app {
+	height: inherit;
+	background: no-repeat url(/images/mobile-app.jpg);
+}
+
+.design-descriptions {
+	height: inherit;
+	background: no-repeat url(/images/design-decisions.jpg);
+}
+
+.what-we-do h3 {
+	display: block;
+
+	padding-top: 27px;
+	padding-bottom: 27px;
+
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1.71em;
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	color: var(--color-for-btn-caption);
+
+	background: rgba(47, 48, 58, 0.8);
+
+	border-bottom-left-radius: var(--radius-borders);
+	border-bottom-right-radius: var(--radius-borders);
+}
+/* 
++++ Наша команда +++
+*/
+.our-team {
+	padding-top: 94px;
+	padding-bottom: 94px;
+	margin-bottom: 94px;
+
+	font-size: 16px;
+	line-height: 1.19em;
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	background: #f5f4fa;
+}
+
+.our-team .container {
+	margin-bottom: 0px;
+}
+
+.our-team-list-item {
+	display: inline-block;
+
+	width: 270px;
+
+	background: #ffffff;
+	border-radius: var(--radius-borders);
+}
+
+.our-team-list-item img:first-child {
+	margin-bottom: 30px;
+}
+
+.our-team h3 {
+	margin-top: 0px;
+	margin-bottom: 10px;
+
+	font-weight: 500;
+}
+
+.our-team p {
+	margin-top: 0px;
+	margin-bottom: 16px;
+
+	font-weight: normal;
+	color: var(--color-for-description);
+}
+
+/* 
++++ Наши Клиенты +++
+*/
+.our-clients li {
+	display: inline-block;
+}
+
+/* 
++++++++++++++++++++++
+	Footer
++++++++++++++++++++++
+*/
+footer {
+	height: 253px;
+	background-color: #2f303a;
+}
+
+footer .logo {
+	font-size: 22px;
+	color: #ffffff;
+}
+
+.our-address ul {
+	display: contents;
+
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.71em;
+
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.our-address li:first-child {
+	color: #ffffff;
+}
+
+footer h3 {
+	font-size: 14px;
+	line-height: 1.14px;
+	text-transform: uppercase;
+
+	color: #ffffff;
+}
+
+.copyright {
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 2em;
+
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	color: rgba(255, 255, 255, 0.4);
+}
