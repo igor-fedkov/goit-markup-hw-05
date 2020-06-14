@@ -11,7 +11,7 @@
 	/* Радиус скругления для изображений */
 	--radius-borders: 4px;
 
-	/* Ширина контейнеров с учетов  */
+	/* Ширина контейнеров с учетом отступов  */
 	--width-of-container: 1200px;
 }
 
@@ -425,7 +425,7 @@ footer {
 footer .container {
 	display: flex;
 	align-items: baseline;
-	margin-bottom: 18px;
+	margin-bottom: 0px;
 	padding-top: 45px;
 	padding-bottom: 28px;
 }
@@ -456,7 +456,8 @@ footer .social-link-list a {
 	background: rgba(255, 255, 255, 0.1);
 }
 
-footer h3 {
+footer b {
+	display: block;
 	margin-bottom: 20px;
 
 	font-size: 14px;
@@ -482,6 +483,7 @@ footer h3 {
 .copyright {
 	display: block;
 	margin: 0px;
+	padding-top: 18px;
 	padding-bottom: 21px;
 
 	font-weight: normal;
