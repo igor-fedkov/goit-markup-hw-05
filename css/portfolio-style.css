@@ -1,17 +1,10 @@
-h2 {
-	font-size: 18px;
-	line-height: 2em;
-
-	text-align: left;
-
-	letter-spacing: 0.06em;
-}
-
 header {
 	margin-bottom: 93px;
 }
 
 .type-of-work {
+	margin: 0px;
+
 	font-size: 16px;
 	line-height: 1.88em;
 
@@ -23,7 +16,6 @@ header {
 	Main
 +++++++++++++++++++++
 */
-
 .list-btn {
 	display: flex;
 	justify-content: center;
@@ -56,22 +48,44 @@ button:hover {
 	background-color: var(--color-for-hovered);
 }
 
-.block-projects {
+.projects-list {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.block-projects li {
+.projects-list h2 {
+	display: block;
+	margin-bottom: 4px;
+
+	font-size: 18px;
+	line-height: 2em;
+	text-align: left;
+	letter-spacing: 0.06em;
+}
+
+.portfolio-img-description {
+	padding: 20px;
+
+	border-right: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+	border-left: 1px solid #eeeeee;
+}
+
+.projects-list-item a {
+	display: block;
+}
+
+.projects-list-item {
 	margin-right: 30px;
 	margin-bottom: 30px;
 
 	width: calc((100% - 60px) / 3);
 }
 
-.block-projects li:nth-child(3n + 3) {
+.projects-list-item:nth-child(3n + 3) {
 	margin-right: 0px;
 }
 
-.block-projects li:nth-last-child(-n + 3) {
+.projects-list-item:nth-last-child(-n + 3) {
 	margin-bottom: 0px;
 }

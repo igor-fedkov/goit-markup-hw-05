@@ -63,6 +63,10 @@ a {
 	text-decoration: none;
 }
 
+img {
+	display: block;
+}
+
 .no-display {
 	display: none;
 }
