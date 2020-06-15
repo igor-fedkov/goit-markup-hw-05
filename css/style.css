@@ -32,6 +32,10 @@ body {
 	color: #212121;
 }
 
+section {
+	margin-bottom: 94px;
+}
+
 h2 {
 	padding: 0px;
 	margin: 0px;
@@ -75,7 +79,6 @@ img {
 	margin-top: 0px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 94px;
 	padding: 0px 15px;
 
 	width: var(--width-of-container);
@@ -87,7 +90,6 @@ img {
 +++++++++++++++++++++
 */
 .head .container {
-	margin-bottom: 0;
 	display: flex;
 	align-items: center;
 	/* justify-content: space-between; */
@@ -165,7 +167,6 @@ header .logo {
 */
 .hero {
 	padding: 0px;
-	margin-bottom: 94px;
 
 	background: no-repeat url(/images/order-background.jpg);
 
@@ -331,7 +332,6 @@ header .logo {
 .our-team {
 	padding-top: 94px;
 	padding-bottom: 94px;
-	margin-bottom: 94px;
 
 	font-size: 16px;
 	line-height: 1.19em;
@@ -344,10 +344,6 @@ header .logo {
 .our-team-list {
 	display: flex;
 	justify-content: space-between;
-}
-
-.our-team .container {
-	margin-bottom: 0px;
 }
 
 .our-team-list-item {
@@ -429,7 +425,6 @@ footer {
 footer .container {
 	display: flex;
 	align-items: baseline;
-	margin-bottom: 0px;
 	padding-top: 45px;
 	padding-bottom: 28px;
 }
