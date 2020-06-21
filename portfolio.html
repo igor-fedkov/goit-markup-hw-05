@@ -5,8 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 	
-	<link rel="stylesheet" href="./css/style.css" rel="stylesheet">
-	<link rel="stylesheet" href="./css/portfolio-style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/portfolio-style.css">
 	<title>Document</title>
 </head>
 <body>
@@ -21,17 +22,26 @@
 				</a>
 	
 				<ul class="menu-nav">
-					<li><a href="./index.html">Студия</a></li>
-					<li><a class="current" href="./portfolio.html">Портфолио</a></li>
-					<li><a href="">Контакты</a></li>
+					<li class="menu-nav-item"><a class="current" href="./index.html">Студия</a></li>
+					<li class="menu-nav-item"><a href="./portfolio.html">Портфолио</a></li>
+					<li class="menu-nav-item"><a href="">Контакты</a></li>
 				</ul>
 			</nav>
 	
 			<address class="mail-and-tel">
 				<a href="mailto:info@devstudio.com">
-					&#x2709 info@devstudio.com</a>
+					<svg class="mail-and-tel-logo" width="16" height="11">
+						<use href="./images/sprite.svg#email"></use>
+					</svg>
+					<span class="mail-and-tel-caption">info@devstudio.com</span>
+				</a>
+				<!-- <span class="email-logo-img"></span>info@devstudio.com</a> -->
 				<a href="tel:+380961111111">
-					&#128241 +38 096 111 11 11</a>
+					<svg class="mail-and-tel-logo" width="10" height="15">
+						<use href="./images/sprite.svg#smartphone"></use>
+					</svg>
+					<span class="mail-and-tel-caption">+38 096 111 11 11</span>
+				</a>
 			</address>
 		</div>
 	
@@ -63,7 +73,7 @@
 				
 				<ul class="projects-list">
 					<li class="projects-list-item">
-						<!-- <a href=""> -->
+						<a href="">
 							<img src="./images/portfolio/technokryak.jpg" alt="Страница сайта на экране ноутбука">
 							<div class="portfolio-img-description">
 								<h2>Технокряк</h2>
@@ -73,7 +83,7 @@
 								exercitationem facere dolor optio, dolore tempora ullam minima ut explicabo eos praesentium sequi fuga
 								doloremque voluptate nulla!
 							</p>
-						<!-- </a> -->
+						</a>
 					</li>
 					<li class="projects-list-item">
 						<a href="">
@@ -212,33 +222,41 @@
 			</div>
 	
 			<div class="fotter-social">
-				<h3>присоединяйтесь</h3>
+				<b>присоединяйтесь</b>
 				<ul class="social-link-list">
 					<li>
 						<a href="" aria-label="ссылка на Instagram">
-							<img src="./images/instagram-logo.svg" alt="Логотип Instagram">
+							<svg>
+								<use href="./images/sprite.svg#instagram-logo" width="20" height="20"></use>
+							</svg>
 						</a>
 					</li>
 					<li>
 						<a href="" aria-label="ссылка на Twitter">
-							<img src="./images/twitter-logo.svg" alt="Логоип Twitter">
+							<svg>
+								<use href="./images/sprite.svg#twitter-logo" width="20" height="20"></use>
+							</svg>
 						</a>
 					</li>
 					<li>
 						<a href="" aria-label="ссылка на Facebook">
-							<img src="./images/facebook-logo.svg" alt="Логотип Facebook">
+							<svg>
+								<use href="./images/sprite.svg#facebook-logo" width="20" height="20"></use>
+							</svg>
 						</a>
 					</li>
 					<li>
 						<a href="" aria-label="ссылка на LinkedIn">
-							<img src="./images/linkedin-logo.svg" alt="Логотип LinkedIn">
+							<svg>
+								<use href="./images/sprite.svg#linkedin-logo" width="20" height="20"></use>
+							</svg>
 						</a>
 					</li>
 				</ul>
 			</div>
 	
 			<form class="email-input" action="">
-				<h3>Подпишитесь на рассылку</h3>
+				<b>Подпишитесь на рассылку</b>
 				<input type="text">
 				<button class="button">Подписаться</button>
 			</form>
