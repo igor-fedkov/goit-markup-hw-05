@@ -8,6 +8,9 @@
 	/* Цвет описания emai и tel в header, преимуществ и членов команды*/
 	--color-for-description: #757575;
 
+	/* Цвет иконок соц. сетей и клиентов */
+	--color-for-icons: #afb1b8;
+
 	/* Радиус скругления для изображений */
 	--radius-borders: 4px;
 
@@ -141,20 +144,37 @@ header .logo {
 }
 
 .mail-and-tel {
+	display: inline-flex;
+
 	margin-left: auto;
 	color: var(--color-for-description);
+	fill: var(--color-for-description);
+}
+
+.email-logo {
+	display: inline-block;
 }
 
 .mail-and-tel a:not(:last-child) {
 	margin-right: 30px;
 }
 
-.menu-nav a:hover,
-.menu-nav a:focus,
+.mail-and-tel-logo {
+	margin-right: 10px;
+}
+
+.mail-and-tel a {
+	display: inline-flex;
+	align-items: center;
+}
+
+.menu-nav-item a:hover,
+.menu-nav-item a:focus,
 .mail-and-tel a:hover,
 .mail-and-tel a:focus,
 .current {
 	color: var(--color-for-hovered);
+	fill: var(--color-for-hovered);
 }
 
 /* 
@@ -168,11 +188,16 @@ header .logo {
 .hero {
 	padding: 0px;
 
-	background: no-repeat url(/images/order-background.jpg);
+	background-color: var(--color-for-hovered);
+	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
+		url(../images/order-background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	height: 600px;
 
 	text-align: center;
-
-	width: 100%;
 }
 
 .hero > div {
@@ -184,7 +209,7 @@ header .logo {
 
 	text-align: center;
 
-	background: rgba(47, 48, 58, 0.8);
+	/* background: rgba(47, 48, 58, 0.8); */
 }
 
 .hero-content-block > h1 {
@@ -217,12 +242,6 @@ header .logo {
 
 	background-color: var(--color-for-hovered);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.button:hover,
-.button:focus {
-	color: var(--color-for-hovered);
-	background-color: var(--color-for-btn-caption);
 }
 
 /* 
@@ -272,6 +291,30 @@ header .logo {
 	color: var(--color-for-description);
 }
 
+.skills-logo {
+	display: inline-block;
+	margin-bottom: 30px;
+
+	width: 270px;
+	height: 120px;
+
+	background: #f5f4fa center no-repeat;
+	border-radius: var(--radius-borders);
+}
+
+.antenna {
+	background-image: url(../images/antenna.svg);
+}
+.clock {
+	background-image: url(../images/clock.svg);
+}
+.diagram {
+	background-image: url(../images/diagram.svg);
+}
+.astronaut {
+	background-image: url(../images/astronaut.svg);
+}
+
 /* 
 +++ Чем мы занимаемся +++
 */
@@ -291,18 +334,18 @@ header .logo {
 
 .desctop-app {
 	height: inherit;
-	background: no-repeat url(/images/desctop-app.jpg);
+	background: no-repeat url(../images/desctop-app.jpg);
 	/* outline: solid 2px red; */
 }
 
 .mobile-app {
 	height: inherit;
-	background: no-repeat url(/images/mobile-app.jpg);
+	background: no-repeat url(../images/mobile-app.jpg);
 }
 
 .design-descriptions {
 	height: inherit;
-	background: no-repeat url(/images/design-decisions.jpg);
+	background: no-repeat url(../images/design-decisions.jpg);
 }
 
 .what-we-do h3 {
@@ -352,10 +395,12 @@ header .logo {
 	width: 270px;
 
 	background: #ffffff;
-	border-radius: var(--radius-borders);
+	border-bottom-right-radius: var(--radius-borders);
+	border-bottom-left-radius: var(--radius-borders);
+	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
-.our-team-list-item > img {
+.our-team-list-item-foto {
 	margin-bottom: 30px;
 }
 
@@ -378,26 +423,36 @@ header .logo {
 	padding-bottom: 24px;
 }
 
-.social-link-list a {
-	display: inline-block;
-	padding: 11px;
-	border-radius: 50%;
-
-	line-height: 0px;
-}
-
 .social-link-list li:not(:last-child) a {
 	margin-right: 10px;
+}
+
+.social-link-list a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+
+	fill: var(--color-for-icons);
 }
 
 .social-link-list a:hover,
 .social-link-list a:focus {
 	background-color: var(--color-for-hovered);
+	fill: var(--color-for-btn-caption);
 }
 
 .social-link-list {
 	display: flex;
 	justify-content: center;
+}
+
+.social-link-list svg {
+	width: 20px;
+	height: 20px;
 }
 
 /* 
@@ -410,6 +465,56 @@ header .logo {
 
 .our-clients li {
 	display: inline-block;
+}
+
+.our-clients-list svg {
+	fill: var(--color-for-icons);
+}
+
+.our-clients-list a {
+	/* outline: 1px solid red; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border: 1px solid var(--color-for-icons);
+	border-radius: var(--radius-borders);
+
+	width: 170px;
+	height: 90px;
+}
+
+.client1-icon {
+	width: 44px;
+	height: 49px;
+}
+.client2-icon {
+	width: 40px;
+	height: 52px;
+}
+.client3-icon {
+	width: 41px;
+	height: 43px;
+}
+.client4-icon {
+	width: 80px;
+	height: 42px;
+}
+.client5-icon {
+	width: 59px;
+	height: 47px;
+}
+.client6-icon {
+	width: 88px;
+	height: 45px;
+}
+
+.our-clients-list a:hover,
+.our-clients-list a:focus,
+.our-clients-list a:hover svg,
+.our-clients-list a:focus svg {
+	border-color: var(--color-for-hovered);
+	fill: var(--color-for-hovered);
 }
 
 /* 
@@ -453,6 +558,7 @@ footer .logo {
 
 footer .social-link-list a {
 	background: rgba(255, 255, 255, 0.1);
+	fill: var(--color-for-btn-caption);
 }
 
 footer b {
