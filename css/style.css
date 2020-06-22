@@ -242,6 +242,12 @@ header .logo {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.button:hover,
+.button:focus {
+	color: var(--color-for-hovered);
+	background-color: var(--color-for-btn-caption);
+}
+
 /* 
 	+++ Наши особенности +++
 */
@@ -557,12 +563,6 @@ footer b {
 
 .email-input .button {
 	border-width: 0px;
-}
-
-.email-input .button:hover,
-.email-input .button:focus {
-	color: var(--color-for-hovered);
-	background-color: var(--color-for-btn-caption);
 }
 
 .copyright {
