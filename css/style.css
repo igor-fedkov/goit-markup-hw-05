@@ -208,8 +208,6 @@ header .logo {
 	height: 600px;
 
 	text-align: center;
-
-	/* background: rgba(47, 48, 58, 0.8); */
 }
 
 .hero-content-block > h1 {
@@ -268,18 +266,6 @@ header .logo {
 	text-transform: uppercase;
 }
 
-.rectangle-for-skills-img {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-bottom: 30px;
-
-	height: 120px;
-
-	background: #f5f4fa;
-	border-radius: var(--radius-borders);
-}
-
 .features p {
 	margin: 0px;
 
@@ -291,28 +277,22 @@ header .logo {
 	color: var(--color-for-description);
 }
 
-.skills-logo {
-	display: inline-block;
+.skills-item div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin-bottom: 30px;
 
 	width: 270px;
 	height: 120px;
 
-	background: #f5f4fa center no-repeat;
+	background-color: #f5f4fa;
 	border-radius: var(--radius-borders);
 }
 
-.antenna {
-	background-image: url(../images/antenna.svg);
-}
-.clock {
-	background-image: url(../images/clock.svg);
-}
-.diagram {
-	background-image: url(../images/diagram.svg);
-}
-.astronaut {
-	background-image: url(../images/astronaut.svg);
+.skills-item svg {
+	width: 70px;
+	height: 70px;
 }
 
 /* 

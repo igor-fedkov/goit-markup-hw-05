@@ -1,7 +1,3 @@
-header {
-	margin-bottom: 93px;
-}
-
 .type-of-work {
 	margin: 0px;
 
@@ -16,6 +12,12 @@ header {
 	Main
 +++++++++++++++++++++
 */
+.portfolio {
+	padding-top: 93px;
+
+	border-top: 1px solid #ececec;
+}
+
 .list-btn {
 	display: flex;
 	justify-content: center;
