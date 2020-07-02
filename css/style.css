@@ -510,6 +510,7 @@ header .logo {
 
 .our-clients-list svg {
 	fill: var(--color-for-icons);
+	transition: fill var(--trans-time-and-bezier);
 }
 
 .our-clients-list a {
@@ -522,6 +523,8 @@ header .logo {
 
 	width: 170px;
 	height: 90px;
+
+	transition: border-color var(--trans-time-and-bezier);
 }
 
 .client1-icon {

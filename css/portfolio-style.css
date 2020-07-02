@@ -127,7 +127,6 @@ button:hover {
 
 .projects-list-item a:hover .pli-hover-text,
 .projects-list-item a:focus .pli-hover-text {
-	transform: translateY(0%);
 	color: var(--color-for-btn-caption);
 }
 
