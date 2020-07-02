@@ -62,7 +62,8 @@
 					<h1>
 						Эфективные решения <br>для вашего бизнеса
 					</h1>
-					<a class="button" href="">Заказать услугу</a>
+					<button class="button" data-open-modal>Заказать услугу</button>
+					<!-- <a class="button" href="">Заказать услугу</a> -->
 				</div>
 			</div>
 		</section>
@@ -445,6 +446,44 @@
 		<!-- Разделительная черта, или нижняя граница блока -->
 	</footer>
 	
+	
 
+
+	<div class="backdrop is-hidden" data-backdrop>
+	<!-- <div class="backdrop" data-backdrop></div> -->
+		<div class="modal">
+			<button class="btn-close" data-close-modal>&#10006;</button>
+			<h1 class="modal-title">Оставьте свои данные, мы вам перезвоним</h1>
+			<p>Имя</p>
+			<p>Телефон</p>
+			<p>Почта</p>
+			<p>Комментарий</p>
+
+			<button class="button">Отправить</button>
+		</div>
+	</div>
+
+
+
+	<script>
+		const refs = {
+			openModalBtn: document.querySelector("[data-open-modal]"),
+			closeModalBtn: document.querySelector("[data-close-modal]"),
+			backdrop: document.querySelector("[data-backdrop]"),
+		}
+
+		refs.openModalBtn.addEventListener("click", toggleModal);
+		refs.closeModalBtn.addEventListener("click", toggleModal);
+
+		refs.backdrop.addEventListener("click", logBackdropClick);
+
+		function toggleModal() {
+			refs.backdrop.classList.toggle("is-hidden");
+		}
+
+		function logBackdropClick() {
+			console.log("Это клик в бекдроп");
+		}
+	</script>
 </body>
 </html>
