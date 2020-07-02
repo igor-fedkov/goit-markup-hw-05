@@ -23,9 +23,15 @@
 				</a>
 			
 				<ul class="menu-nav">
-					<li class="menu-nav-item"><a class="current" href="./index.html">Студия</a></li>
-					<li class="menu-nav-item"><a href="./portfolio.html">Портфолио</a></li>
-					<li class="menu-nav-item"><a href="">Контакты</a></li>
+					<li class="menu-nav-item">
+						<a class="current" href="./index.html">Студия</a>
+					</li>
+					<li class="menu-nav-item">
+						<a class="menu-nav-item-link" href="./portfolio.html">Портфолио</a>
+					</li>
+					<li class="menu-nav-item">
+						<a class="menu-nav-item-link" href="">Контакты</a>
+					</li>
 				</ul>
 			</nav>
 			
@@ -129,18 +135,20 @@
 				<h2>Чем мы занимаемся</h2>
 				<ul class="what-we-do-list">
 					<li class="what-we-do-item">
-						<div class="desctop-app">
-								<!-- <img src="./images/desctop-app.jpg" alt="Десктопные приложения" width="370" height="294"> -->
+						<div>
+							<img src="./images/desctop-app.jpg" alt="Десктопные приложения" width="370" height="294">
 							<h3>Десктопные приложения</h3>
 						</div>
 					</li>
 					<li class="what-we-do-item">
-						<div class="mobile-app">
+						<div>
+							<img src="./images/mobile-app.jpg" alt="Мобильные приложения" width="370" height="294">
 							<h3>Мобильные приложения</h3>
 						</div>
 					</li>
 					<li class="what-we-do-item">
-						<div class="design-descriptions">
+						<div>
+							<img src="./images/design-decisions.jpg" alt="Дизайнерские решения" width="370" height="294">
 							<h3>Дизайнерские решения</h3>
 						</div>
 					</li>
@@ -419,7 +427,13 @@
 			<form class="email-input" action="">
 				<b>Подпишитесь на рассылку</b>
 				<input type="text">
-				<button class="button">Подписаться</button>
+				<button class="button">
+					Подписаться
+					<svg class="button-icon">
+						<use href="./images/sprite.svg#icon-send" width="24" height="24"></use>
+					</svg>
+				</button>
+
 			</form>
 		</div>
 
