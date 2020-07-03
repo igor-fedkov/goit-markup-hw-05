@@ -425,9 +425,9 @@
 				</ul>
 			</div>
 
-			<form class="email-input" action="">
+			<form class="email-input" action="" method="POST">
 				<b>Подпишитесь на рассылку</b>
-				<input type="text">
+				<input type="email" placeholder="E-mail">
 				<button class="button">
 					Подписаться
 					<svg class="button-icon">
@@ -445,7 +445,8 @@
 
 		<!-- Разделительная черта, или нижняя граница блока -->
 	</footer>
-	
+
+
 	
 
 
@@ -454,15 +455,27 @@
 		<div class="modal">
 			<button class="btn-close" data-close-modal>&#10006;</button>
 			<h1 class="modal-title">Оставьте свои данные, мы вам перезвоним</h1>
-			<p>Имя</p>
-			<p>Телефон</p>
-			<p>Почта</p>
-			<p>Комментарий</p>
 
-			<button class="button">Отправить</button>
+			<form action="" method="post">
+				<input class="modal-form-input-area" type="text" name="name" placeholder="Имя">
+				<input class="modal-form-input-area" type="tel" name="telephone" placeholder="Телефон">
+				<input class="modal-form-input-area" type="email" name="email" placeholder="Почта">
+
+				<textarea class="modal-form-input-area" name="comment" rows="6" placeholder="Комментарий"></textarea>
+				
+				<input class="modal-form-terms-checkbox"	type="checkbox" name="accept-terms" id="accept-terms" value="i-accept-terms">
+				<label for="accept-terms">
+					Соглашаюсь с рассылкой и принимаю 
+					<a href="" aria-label="Читать условия договора">Условия договора</a>
+				</label>
+
+				<button class="button">Отправить</button>
+			</form>
 		</div>
 	</div>
 
+
+	
 
 
 	<script>

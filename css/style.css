@@ -679,6 +679,7 @@ footer .button:focus .button-icon {
 	height: 100%;
 
 	background: rgba(0, 0, 0, 0.2);
+	/* border-radius: var(--radius-borders); */
 
 	opacity: 1;
 	perspective-origin: center;
@@ -707,8 +708,9 @@ footer .button:focus .button-icon {
 
 	padding: 40px;
 
-	min-width: 528px;
-	/* min-height: 581px; */
+	width: 528px;
+
+	font-size: 14px;
 
 	background-color: #fff;
 	transition: transform var(--trans-time-and-bezier);
@@ -717,8 +719,40 @@ footer .button:focus .button-icon {
 }
 
 .modal-title {
+	margin-top: 0px;
+	margin-bottom: 30px;
+
 	font-weight: bold;
 	font-size: 20px;
 	line-height: 1.15em;
 	text-align: center;
+}
+
+.modal-form-input-area {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	margin-bottom: 28px;
+	width: 100%;
+
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+
+	color: var(--color-for-description);
+}
+
+textarea.modal-form-input-area {
+	margin-bottom: 20px;
+	padding: 12px 16px;
+
+	resize: none;
+}
+.modal-form-terms-checkbox {
+	margin-bottom: 30px;
+	margin-right: 8px;
+	margin-left: 12px;
+}
+
+.modal .button {
+	/* margin-right: auto;
+	margin-left: auto; */
 }
